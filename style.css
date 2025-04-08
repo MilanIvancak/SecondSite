@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 2.2vmin;
+}
+
+h3 {
+    font-size: 2.5vmin;
+}
+
+.about-us h4 {
+    font-size: 3.2vmin;
+    margin-bottom: 40px;
+}
+
 body {
     font-family: "DM Sans", sans-serif;
     color: #536942;
@@ -24,9 +37,13 @@ a {
 }
 
 .container {
-    max-width: 80vw;
+    max-width: 90vw;
     padding: 16px;
     margin: auto;
+}
+
+section {
+    margin-top: 4vmin;
 }
 
 nav {
@@ -45,12 +62,20 @@ nav {
 
 .nav-list a {
     color: whitesmoke;
+    font-size: 2vmin;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color:#536942;
+    font-size: 2.3vmin;
 }
 
 .btn-primary:hover {
     background: #536942;
     color:#FFD936;
     transform: scale(1.1);
+    border: 1px solid #000000;
 }
 
 .btn {
@@ -58,6 +83,7 @@ nav {
     background: transparent;
     cursor: pointer;
     border-radius: 20px;
+    font-size: 2vmin;
 }
 
 .btn-secondary {
@@ -66,10 +92,15 @@ nav {
     font-weight: bold;
 }
 
+.btn-secondary:hover {
+    transform: scale(1.1);
+    color:#536942;
+}
+
 .btn-primary {
     border: none;
-    padding: 1.8vmin 3vmin;
-    font-size: medium;
+    padding: 2vmin 3.2vmin;
+    font-size: 2vmin;
     font-weight: bold;
     text-align: center;
     background: #FFD936;
@@ -104,6 +135,180 @@ nav {
 .menu-btn {
     position: absolute;
     display: none;
+}
+
+.section-title h1 {
+    font-size: 5vmin;
+    padding-bottom: 1vmin;
+    text-align: center;
+    padding-left: 9vw
+}
+
+.section-title .line {
+    width: 17vmin;
+    height: 4px;
+    background: #FFD936;
+    margin-left: 51%;
+
+}
+
+.services {
+    width: 90vw;
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.service {
+    padding-top: 80px;
+    padding-left: 9vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.service-one p {
+    padding-left: 5.5vmin;
+    padding-right: 5.5vmin;
+}
+
+.service-one h3 {
+    padding-left: 5.5vmin;
+}
+
+.service-two p {
+    padding-left: 5.5vmin;
+    padding-right: 5.5vmin;
+}
+
+.service-two h3 {
+    padding-left: 5.5vmin;
+}
+
+.service-three p {
+    padding-left: 5.5vmin;
+    padding-right: 5.5vmin;
+}
+
+.service-three h3 {
+    padding-left: 5.5vmin;
+}
+
+.service img {
+    max-width: 100%;
+    width: 90%;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.05);
+}
+
+.testimonial {
+    background: #efebeb;
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+    gap: 24px;
+    padding: 24px 16px;
+}
+
+.testimonial h1 {
+    font-size: 32px;
+    font-family: 'Forum', sans-serif;
+}
+
+.testimonial .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.about-us .container .about-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.about-us .btn-primary {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-us .container .about-content h1 {
+    font-family: 'Forum', sans-serif;
+    font-size: 30px;
+}
+
+.questions {
+    min-height: 60vh;
+    min-width: 80vw;
+    background-image: url('./img/main-2.png');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.questions .container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+}
+
+.questions h1 {
+    font-size: 7vmin;
+}
+
+.questions .btn-primary {
+    margin-top: 60px;
+}
+
+footer .container {
+    display: flex;
+    padding: 40px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    font-size: 2vmin;
+}
+
+.footer-logo {
+    margin-right: 135px;
+}
+
+footer p {
+    font-size: 1.8vmin;
 }
 
 @media screen and (max-width:520px) {
@@ -142,6 +347,33 @@ nav {
 
     .nav-list li:first-child {
         padding-top: 39%;
+    }
+
+    .service {
+        flex-wrap: wrap;
+    }
+
+    .section-title h1 {
+        font-size: 8vmin;
+        padding-left: 26%;
+    }
+
+    .services {
+        padding-right: 10vmin;
+    }
+
+    .service img {
+        width: 100%;
+    }
+
+    .about-us .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 16px;
     }
 
 }
